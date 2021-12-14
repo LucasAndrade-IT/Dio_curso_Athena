@@ -1,0 +1,9 @@
+select city, population
+from "population"."population"
+where city='Foz do Iguaçu';
+select * from "population"."population" limit 10
+select region,
+	sum(population)
+from "population"."population"
+where region='Sul'
+group by region;
